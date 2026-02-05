@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './views/Header';
+import Footer from './views/Footer';
 import Home from './views/home';
 import Gallery from './views/Gallery';
 import FurnitureDetails from './views/FurnitureDetails';
@@ -16,6 +17,7 @@ function App() {
           <Route path="/furniture-details" element={<FurnitureDetails />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   )
 }
