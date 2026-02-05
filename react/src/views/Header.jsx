@@ -10,17 +10,24 @@ export default function Header() {
                     <li><a href="about.html">About</a></li>
                 </ul>
             </nav>
-         <svg id="menu" xmlns="http://www.w3.org/2000/svg"
-            width="0.522222in" height="0.2in"
-            viewBox="0 0 47 18">
-            <path id="Imported Path #2"
-            fill="none" stroke="#F4F4F9" stroke-width="2"
-            d="M 0.00,0.93
-            C 0.00,0.93 47.00,0.93 47.00,0.93M 0.00,9.01
-            C 0.00,9.01 47.00,9.01 47.00,9.01M 0.00,17.08
-            C 0.00,17.08 47.00,17.08 47.00,17.08" />
-        </svg>
-            </header>
+            <svg id="menu" xmlns="http://www.w3.org/2000/svg"
+                width="0.522222in" height="0.2in"
+                viewBox="0 0 47 18">
+                <path id="Imported Path #2"
+                fill="none" stroke="#F4F4F9" stroke-width="2"
+                d="M 0.00,0.93
+                C 0.00,0.93 47.00,0.93 47.00,0.93M 0.00,9.01
+                C 0.00,9.01 47.00,9.01 47.00,9.01M 0.00,17.08
+                C 0.00,17.08 47.00,17.08 47.00,17.08" />
+            </svg>
+        </header>
+            <nav className="full_grid">
+                <ul id="mobile_menu" className="toggled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </>
     )
 }
