@@ -14,7 +14,7 @@ export default function Header() {
                 width="0.522222in" height="0.2in"
                 viewBox="0 0 47 18">
                 <path id="Imported Path #2"
-                fill="none" stroke="#F4F4F9" stroke-width="2"
+                fill="none" stroke="#F4F4F9" strokeWidth="2"
                 d="M 0.00,0.93
                 C 0.00,0.93 47.00,0.93 47.00,0.93M 0.00,9.01
                 C 0.00,9.01 47.00,9.01 47.00,9.01M 0.00,17.08
