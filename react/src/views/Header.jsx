@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom";
 export default function Header() {
     return(
         <>
             <header className="full_grid">
-            <a href="index.html"><img id="logo" className="col-span-1" src="../images/logo.svg" alt="logo" /></a>
+            <Link to="/"><img id="logo" className="col-span-1" src="../images/logo.svg" alt="logo" /></Link>
             <nav id="main_nav">
                 <ul>
-                    <li className="selected"><a href="index.html">Home</a></li>
-                    <li><a href="furniture.html">Furniture</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li className="selected"><Link to="/" >Home</Link></li>
+                    <li><Link to="/furniture">Furniture</Link></li>
+                    <li><Link to="/about">About</Link></li>
                 </ul>
             </nav>
             <svg id="menu" xmlns="http://www.w3.org/2000/svg"
