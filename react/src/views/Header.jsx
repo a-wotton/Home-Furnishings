@@ -1,5 +1,11 @@
+import MobileMenu from "./MobileMenu";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+
 export default function Header() {
+
+    const [toggle, setToggle] = useState(true);
+
     return(
         <>
             <header className="full_grid">
@@ -11,7 +17,7 @@ export default function Header() {
                     <li><Link to="/about">About</Link></li>
                 </ul>
             </nav>
-            <svg id="menu" xmlns="http://www.w3.org/2000/svg"
+            <svg id="menu" onClick={() => setToggle(!toggle)} xmlns="http://www.w3.org/2000/svg"
                 width="0.522222in" height="0.2in"
                 viewBox="0 0 47 18">
                 <path id="Imported Path #2"
@@ -21,14 +27,8 @@ export default function Header() {
                 C 0.00,9.01 47.00,9.01 47.00,9.01M 0.00,17.08
                 C 0.00,17.08 47.00,17.08 47.00,17.08" />
             </svg>
-        </header>
-            <nav className="full_grid">
-                <ul id="mobile_menu" className="toggled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Furniture</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+        </header>   
+            { !toggle ? <MobileMenu /> : '' }
         </>
     )
 }
